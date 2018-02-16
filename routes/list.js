@@ -2,7 +2,9 @@
 /*
  * GET home page.
  */
+var data = require("../data.json");
 
 exports.viewList = function(req, res){
-  res.render('list');
+	console.log(data);
+    res.render('list', data);
 };
