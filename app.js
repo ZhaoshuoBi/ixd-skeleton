@@ -43,7 +43,7 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', index.view);
-// app.get('/users', user.list);
+//app.get('/users', user.list);
 app.get('/list', list.viewList);
 app.get('/still', still.viewstill);
 app.get('/marked', marked.viewmarked);
