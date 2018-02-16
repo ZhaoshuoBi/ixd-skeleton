@@ -9,13 +9,13 @@ var path = require('path');
 var handlebars = require('express3-handlebars');
 
 var index = require('./routes/index');
-var list = require('./routes/List');
-var marked = require('./routes/marked');
-var still = require('./routes/Still');
-var map = require('./routes/map');
-var setting = require('./routes/setting');
-var setting2 = require('./routes/setting2');
-var login = require('./routes/login');
+// var list = require('./routes/List');
+// var marked = require('./routes/marked');
+// var still = require('./routes/Still');
+// var map = require('./routes/map');
+// var setting = require('./routes/setting');
+// var setting2 = require('./routes/setting2');
+// var login = require('./routes/login');
 
 // Example route
 // var user = require('./routes/user');
