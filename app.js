@@ -6,7 +6,7 @@
 var express = require('express');
 var http = require('http');
 var path = require('path');
-var handlebars = require('express3-handlebars')
+var handlebars = require('express3-handlebars');
 
 var index = require('./routes/index');
 var list = require('./routes/List');
@@ -35,7 +35,7 @@ app.use(express.methodOverride());
 app.use(express.cookieParser('IxD secret key'));
 app.use(express.session());
 app.use(app.router);
-app.use("/",express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // development only
 if ('development' == app.get('env')) {
@@ -45,13 +45,13 @@ if ('development' == app.get('env')) {
 app.get('/', index.view);
 // Example route
 // app.get('/users', user.list);
-app.get('/list/', list.viewList);
-app.get('/still/', still.viewstill);
-app.get('/marked/', marked.viewmarked);
-app.get('/map/', map.viewmap);
-app.get('/setting/', setting.viewsetting);
-app.get('/setting2/', setting2.viewsetting2);
-app.get('/login/', login.viewlogin);
+app.get('/list', list.viewList);
+app.get('/still', still.viewstill);
+app.get('/marked', marked.viewmarked);
+app.get('/map', map.viewmap);
+app.get('/setting', setting.viewsetting);
+app.get('/setting2', setting2.viewsetting2);
+app.get('/login', login.viewlogin);
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
