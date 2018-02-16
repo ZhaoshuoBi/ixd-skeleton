@@ -45,13 +45,13 @@ if ('development' == app.get('env')) {
 app.get('/', index.view);
 // Example route
 // app.get('/users', user.list);
-app.get('/list', list.viewList);
-app.get('/still', still.viewstill);
-app.get('/marked', marked.viewmarked);
-app.get('/map', map.viewmap);
-app.get('/setting', setting.viewsetting);
-app.get('/setting2', setting2.viewsetting2);
-app.get('/login', login.viewlogin);
+// app.get('/list', list.viewList);
+// app.get('/still', still.viewstill);
+// app.get('/marked', marked.viewmarked);
+// app.get('/map', map.viewmap);
+// app.get('/setting', setting.viewsetting);
+// app.get('/setting2', setting2.viewsetting2);
+// app.get('/login', login.viewlogin);
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
