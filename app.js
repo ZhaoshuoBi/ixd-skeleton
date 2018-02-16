@@ -13,6 +13,7 @@ var list = require('./routes/List');
 var marked = require('./routes/marked');
 var still = require('./routes/Still');
 var map = require('./routes/map');
+var setting = require('./routes/setting');
 
 // Example route
 // var user = require('./routes/user');
@@ -46,6 +47,7 @@ app.get('/list/', list.viewList);
 app.get('/still/', still.viewstill);
 app.get('/marked/', marked.viewmarked);
 app.get('/map/', map.viewmap);
+app.get('/setting/', setting.viewsetting);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
