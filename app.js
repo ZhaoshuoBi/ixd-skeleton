@@ -16,6 +16,7 @@ var map = require('./routes/map');
 var setting = require('./routes/setting');
 var setting2 = require('./routes/setting2');
 var login = require('./routes/login');
+var add = require('./routes/add');
 
 // Example route
 // var user = require('./routes/user');
@@ -51,6 +52,7 @@ app.get('/map', map.viewmap);
 app.get('/setting', setting.viewsetting);
 app.get('/setting2', setting2.viewsetting2);
 app.get('/login', login.viewlogin);
+app.get('/add', add.addLocation);
 
 
 http.createServer(app).listen(app.get('port'), function(){
