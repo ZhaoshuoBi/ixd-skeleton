@@ -25,7 +25,11 @@
 
 	<section class="form animated flipInX">
   <h2 align="center">Login To Your Account</h2>
-
+		<p class="facebookLogin">
+				Please login through Facebook
+				<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+				</fb:login-button>
+			</p>
 
 	<form action="../">
 		<input placeholder="Username  //anything" type="text" id="username"></input>
@@ -41,5 +45,8 @@
  --></div>
 	<script src="/js/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/introHCI.js"></script>
+	{{> facebook}}
+	<script src="/js/facebook.js"></script>
 </body>
 </html>
