@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115174468-1"></script>
+	<script>
+  		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+  		gtag('js', new Date());
+
+  		gtag('config', 'UA-115174468-1');
+	</script>
+	
+	<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<!-- <script src="/js/jquery-1.11.0.js"></script>
+	<script src="/js/bootstrap.js"></script>
+	<script src="/js/hci-friends.js"></script> -->
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap2.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+	<link rel="stylesheet" type="text/css" href="css/hci-friends.css">
+	<title>Mark_list</title>
+
+</head>
+<style type="text/css">
+	body{
+		background-color: #ff6c24;
+	}
+
+</style>
+<body>
+<div class="container" id="main">
+ 
+<!-- 	<div class="center">
+ -->   
+ 	<br>
+  	<a href="../alt"><img src="../images/home_R.jpg" class="img-responsive" width="80" alt="home" align="left"> </a>
+  	<div class="map" div style="text-align: center;"><img src="../images/history_R.JPG" class="img-responsive" width="160" alt="history_R">
+	<a href="../alt_map/"><img src="../images/Map_R.JPG" class="img-responsive" width="80"  alt="alt_map" align="right"> </a>
+	<br> 
+	 	
+	{{#each location_list}}
+		<div class="location_list">
+
+
+			<div align="left">
+	  		<p>
+	    	<br> 
+	    	<strong>{{time}} </strong><br>
+	    	<strong>Location</strong>: {{location}}<br><strong>
+	    	Note</strong>: {{Note}}<br></p>		
+		</div>
+			
+		</div>
+		<hr>
+	{{/each}}
+	
+
+</div>
+	<script src="/js/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/Tap_interaction2.js"></script>
+	<script src="/js/introHCI.js"></script>
+
+
+</body>
+</html>
