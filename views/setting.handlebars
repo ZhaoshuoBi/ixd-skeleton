@@ -11,8 +11,8 @@
   		gtag('config', 'UA-115174468-1');
 	</script>
 	<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 <!-- 	<script src="/js/jquery-1.11.0.js"></script>
@@ -38,14 +38,29 @@
 	<a href="../map/"><img src="../../images/Maps-Map-Marker-icon.png" class="img-responsive" width="50" height="50" alt="setting" align="right"> </a>
 <div align="left">
 
-		<div align="left">
-	  <p><br>
-	    <strong>Voice Control </strong>
-		 <a href="../setting2/"><img src="../../images/off.png" class="img-responsive" width="40" height="40" alt="edit" align="right"> </a>
-
-		  
+		<div id="infoToggler">
+	  		<p><br>
+	    	<strong>Voice Control </strong>
+		 	<!-- <a href="#"><img src="../../images/off.png" class="img-responsive" id="voice" width="40" height="40" alt="edit" align="right"> </a> -->		  
+		 	<img src="../../images/off.png" class="img-responsive" id="voice" width="40" height="40" alt="edit" align="right"/>
+			<img src="../../images/on.png" class="img-responsive" id="voice" width="40" height="40" alt="edit" align="right" style="display:none"/>
+		</div>
+		<div id="infoToggler1">
+	  		<p><br>
+	    	<strong>Add Note After Driving</strong>
+		 	<!-- <a href="#"><img src="../../images/off.png" class="img-responsive" id="voice" width="40" height="40" alt="edit" align="right"> </a> -->		  
+		 	<img src="../../images/off.png" class="img-responsive" id="note" width="40" height="40" alt="edit" align="right"/>
+			<img src="../../images/on.png" class="img-responsive" id="note" width="40" height="40" alt="edit" align="right" style="display:none"/>
+		</div>
+		<div id="infoToggler2">
+	  		<p><br>
+	    	<strong>Gesture</strong>
+		 	<!-- <a href="#"><img src="../../images/off.png" class="img-responsive" id="voice" width="40" height="40" alt="edit" align="right"> </a> -->		  
+		 	<img src="../../images/off.png" class="img-responsive" id="Gesture" width="40" height="40" alt="edit" align="right"/>
+			<img src="../../images/on.png" class="img-responsive" id="Gesture" width="40" height="40" alt="edit" align="right" style="display:none"/>
+		</div>
 		  <br>
-				  <br>
+		  <br>
 		  <br>
 		  <br>
 		  <br>
@@ -61,12 +76,14 @@
 		  <br>
 		  <br>
 		
-		</div>
+	
 		
 </div>
 <!-- 	<canvas id="canvas"></canvas>
  --></div>
 	<script src="/js/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/Tap_interaction.js"></script>
+
 </body>
 </html>
