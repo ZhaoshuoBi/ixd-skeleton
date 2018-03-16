@@ -155,6 +155,19 @@ var myLatLng7 = {lat: 33.164155, lng: -117.358414};
       });
       infowindow.open(map,marker8);
     });
+    var myLatLng9 = {lat: 32.880603, lng:  -117.239345};
+        var marker9 = new google.maps.Marker({
+          position: myLatLng9,
+          map: map,
+          title: 'R8'
+        });
+    marker9.setMap(map);
+        google.maps.event.addListener(marker9,'click',function() {
+        var infowindow = new google.maps.InfoWindow({
+        content:" "
+      });
+      infowindow.open(map,marker9);
+    });
 }
 	</script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASrllbZEPPaW5QvHUG7fXx4QdJUQZxRSI&callback=myMap"></script>
