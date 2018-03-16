@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115174468-1"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-115174468-1');
+  </script>
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="refresh" content="3;url=../">
+
+<!-- 
+  <script src="/js/jquery-1.11.0.js"></script>
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/hci-friends.js"></script> -->
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+  <link rel="stylesheet" type="text/css" href="../css/hci-friends.css">
+      <title>Location marked!</title>
+
+</head>
+<style class="container">
+
+</style>
+<body>
+<div class="container">
+
+<!--   <div class="center">
+ -->    
+       <a href="../"> <img src="../images/Home icon.png" class="img-responsive" width="50" height="50" alt="home" align="left"> </a>
+       <div class="map" div style="text-align: center;"><img src="../images/Maps-Map-Marker-icon.png" class="img-responsive" width="80" height="100" alt="setting">
+       <a href="../setting/"><img src="../../images/setting icon.png" class="img-responsive" width="50" height="50" alt="setting" align="right"> </a>
+  <p><hr></p>
+
+      <p align="center" >Location Saved...
+      </p>
+    <div id="map" style="width:375px;height:414px;" align="center">
+
+      <script>
+        // Note: This example requires that you consent to location sharing when
+        // prompted by your browser. If you see the error "The Geolocation service
+        // failed.", it means you probably did not give permission for the browser to
+        // locate you.
+        var map, infoWindow;
+        function initMap() {
+          map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: -34.397, lng: 150.644},
+            zoom: 6
+          });
+          infoWindow = new google.maps.InfoWindow;
+
+          // Try HTML5 geolocation.
+          if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function(position) {
+              var pos = {
+                lat: position.coords.latitude,
+                lng: position.coords.longitude
+              };
+
+              infoWindow.setPosition(pos);
+              infoWindow.setContent('Saving Location...');
+              infoWindow.open(map);
+              map.setCenter(pos);
+            }, function() {
+              handleLocationError(true, infoWindow, map.getCenter());
+            });
+          } else {
+            // Browser doesn't support Geolocation
+            handleLocationError(false, infoWindow, map.getCenter());
+          }
+        }
+
+        function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+          infoWindow.setPosition(pos);
+          infoWindow.setContent(browserHasGeolocation ?
+                                'Error: The Geolocation service failed.' :
+                                'Error: Your browser doesn\'t support geolocation.');
+          infoWindow.open(map);
+        }
+      </script>
+      <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASrllbZEPPaW5QvHUG7fXx4QdJUQZxRSI&callback=initMap">
+      </script>
+      </div>
+</div>
+<!-- </div>
+ -->  <script src="/js/jquery.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+</body>
+</html>
