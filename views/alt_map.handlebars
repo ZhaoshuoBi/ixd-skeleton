@@ -113,7 +113,7 @@
         var infowindow = new google.maps.InfoWindow({
         content:"None."
       });
-      infowindow.open(map,marker4);
+      infowindow.open(map,marker5);
     });
 var myLatLng6 = {lat: 33.182509, lng: -117.327564};
         var marker6 = new google.maps.Marker({
@@ -128,18 +128,32 @@ var myLatLng6 = {lat: 33.182509, lng: -117.327564};
       });
       infowindow.open(map,marker6);
     });
-    var myLatLng7 = {lat: 33.164155, lng: -117.358414};
+var myLatLng7 = {lat: 33.164155, lng: -117.358414};
         var marker7 = new google.maps.Marker({
           position: myLatLng7,
           map: map,
           title: 'R6'
         });
-    marker7.setMap(map);
+      marker7.setMap(map);
         google.maps.event.addListener(marker7,'click',function() {
         var infowindow = new google.maps.InfoWindow({
-        content:"None."
+        content:"none."
       });
       infowindow.open(map,marker7);
+    });
+
+    var myLatLng8 = {lat: 32.879018, lng: -117.235945};
+        var marker8 = new google.maps.Marker({
+          position: myLatLng8,
+          map: map,
+          title: 'R7'
+        });
+    marker8.setMap(map);
+        google.maps.event.addListener(marker8,'click',function() {
+        var infowindow = new google.maps.InfoWindow({
+        content:" "
+      });
+      infowindow.open(map,marker8);
     });
 }
 	</script>
