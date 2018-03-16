@@ -1,32 +1,35 @@
 {
 	"location_list": [
 		{
-			"time": "2/1/2018 3:30pm",
 			"location": "Sea World",
 			"Note": "Remember to bring Alex"			
 		},
 		
 		{
-			"time": "1/31/2018   2:21pm",
 			"location": "Texas Roadhouse",
 			"Note": "None"			
 		},		
 
 		{
-			"time": "1/13/2018 8:09pm",
 			"location": "32.884857 -117.222422",
 			"Note": "Amazing building, bring Jonna here."			
 		},	
 		{
-			"time": "12/1/2017 7:39am",
 			"location": "142 Rocky Point Rd...",
 			"Note": "Here is a Seafood market"			
 		},		
 
 		{
-			"time": "11/11/2017 4:30pm",
 			"location": "114, Del cambre...",
 			"Note": "A super cheap gas station"			
-		}
+		},
+		{
+			"location": "8820 Loma Linda Dr.",
+			"Note": "none"			
+		},
+		{
+			"location": "42.884857 -127.222422",
+			"Note": "Misha gonna like it."			
+		}	
 	]
 }
